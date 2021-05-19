@@ -1,6 +1,9 @@
+/web/WEB-INF/classes/
+/.idea
+.idea/
+*.iml
+*.iws
 *.class
-
-# Package Files #
-*.jar
+*.rar
+*.zip
 *.war
-*.ear
