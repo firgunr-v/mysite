@@ -20,7 +20,8 @@ public class MainConfig extends JFinalConfig {
     @Override
     public void configRoute(Routes me) {
 
-
+        //设置视图的默认目录
+        me.setBaseViewPath("/pages");
         //   http://localhost/xxx ->  MainController.xxx()
         me.add("/", MainController.class);
     }
@@ -47,6 +48,6 @@ public class MainConfig extends JFinalConfig {
     }
 
     public static void main(String[] args) {
-        JFinal.start("web", 8080, "/", 15);
+        JFinal.start("web", 8080, "/");
     }
 }
