@@ -6,13 +6,11 @@ import com.jfinal.ext.handler.ContextPathHandler;
 import com.jfinal.kit.PathKit;
 import com.jfinal.kit.Prop;
 import com.jfinal.kit.PropKit;
-import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.activerecord.generator.Generator;
 import com.jfinal.template.Engine;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import my.controller.MainController;
-import my.model._MappingKit;
 
 import javax.sql.DataSource;
 
@@ -44,12 +42,12 @@ public class MainConfig extends JFinalConfig {
 
     @Override
     public void configPlugin(Plugins me) {
-        ActiveRecordPlugin arp = new ActiveRecordPlugin(getDataSource());
+     /*   ActiveRecordPlugin arp = new ActiveRecordPlugin(getDataSource());
         arp.setDialect(new MysqlDialect());
         arp.setDevMode(PropKit.getBoolean("devMode", true));
         arp.setShowSql(PropKit.getBoolean("showSql", true));
         _MappingKit.mapping(arp);
-        me.add(arp);
+        me.add(arp);*/
     }
 
     @Override

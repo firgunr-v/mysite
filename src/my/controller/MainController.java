@@ -14,7 +14,7 @@ public class MainController extends Controller {
     }
 
     public void login() {
-        renderFreeMarker("login.ftl");
+        renderFreeMarker("test.ftl");
     }
 
     public void loginCheck() {
